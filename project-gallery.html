@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Project Gallery | Saffire Construction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <script>document.documentElement.classList.add("js");</script><link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+	  <a class="brand" href="index.html" aria-label="Saffire Construction home">
+  <img src="images/logo.png" alt="Saffire Construction logo" class="site-logo" />
+
+  <span class="brand-text logo-wordmark">
+    <strong>SAFFI<span>R</span>E</strong>
+    <small>CONSTRUCTION</small>
+  </span>
+</a>
+	<button class="menu-toggle" type="button" aria-label="Open menu" data-menu-toggle><i data-lucide="menu"></i></button><nav class="site-nav" data-nav><a href="index.html">Home</a><a href="about-us.html">About Us</a><div class="dropdown" data-dropdown><button class="dropdown-trigger" type="button" data-dropdown-trigger>Services <i data-lucide="chevron-down"></i></button><div class="dropdown-menu"><a href="commercial.html">Commercial</a><a href="residential.html">Residential</a><a href="renovation.html">Renovation</a><a href="interior-design.html">Interior Design</a></div></div><a href="project-gallery.html" class="active">Project Gallery</a><a href="contact-us.html">Contact Us</a></nav></header>
+    <main>
+      <section class="page-hero">
+        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1800&q=85" alt="Premium residential architecture" />
+        <div><span class="hero-kicker">The Portfolio</span><h1>Project Gallery</h1><p>A digital architectural magazine of Saffire Construction projects across Chennai.</p></div>
+      </section>
+      <section class="section reveal">
+        <div class="section-heading"><span class="section-kicker">Filter Projects</span><h2>Explore commercial, residential, renovation, and interior work.</h2></div>
+        <div class="filter-bar" aria-label="Project filters">
+          <button class="is-active" type="button" data-filter="all">All</button>
+          <button type="button" data-filter="commercial">Commercial</button>
+          <button type="button" data-filter="residential">Residential</button>
+          <button type="button" data-filter="interiors">Interiors</button>
+          <button type="button" data-filter="renovation">Renovation</button>
+        </div>
+        <div class="masonry-grid">
+          <button class="project-card tall" type="button" data-project-card data-category="residential" data-title="ECR Luxury Villa" data-description="A 7-month coastal villa build using Italian marble, teak detailing, and warm concealed lighting."><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=900&q=85" alt="ECR Luxury Villa" /><span>ECR Luxury Villa<small>Residential, Chennai</small></span></button>
+          <button class="project-card" type="button" data-project-card data-category="commercial" data-title="OMR Corporate Office" data-description="Commercial fit-out with acoustic meeting rooms, glass partitions, and a refined stone reception zone."><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85" alt="OMR Corporate Office" /><span>OMR Corporate Office<small>Commercial, Chennai</small></span></button>
+          <button class="project-card wide" type="button" data-project-card data-category="interiors" data-title="Adyar Marble Residence" data-description="High-end interiors with marble wall cladding, brass trims, custom wardrobes, and layered lighting."><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=85" alt="Adyar Marble Residence" /><span>Adyar Marble Residence<small>Interiors, Chennai</small></span></button>
+          <button class="project-card" type="button" data-project-card data-category="residential" data-title="Besant Nagar Courtyard Home" data-description="A family residence centered on cross ventilation, garden views, and a quiet natural material palette."><img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=85" alt="Besant Nagar Courtyard Home" /><span>Besant Nagar Courtyard Home<small>Residential, Chennai</small></span></button>
+          <button class="project-card tall" type="button" data-project-card data-category="interiors" data-title="Nungambakkam Executive Suite" data-description="Premium workspace interiors using walnut veneer, leather seating, and brushed-gold accents."><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85" alt="Nungambakkam Executive Suite" /><span>Nungambakkam Executive Suite<small>Interiors, Chennai</small></span></button>
+          <button class="project-card" type="button" data-project-card data-category="commercial" data-title="Guindy Retail Frontage" data-description="Facade and interior shell delivery with durable exterior finishes and premium customer movement planning."><img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=900&q=85" alt="Guindy Retail Frontage" /><span>Guindy Retail Frontage<small>Commercial, Chennai</small></span></button>
+          <button class="project-card wide" type="button" data-project-card data-category="renovation" data-title="Mylapore Heritage Renovation" data-description="A sensitive renovation that retained existing character while upgrading flooring, services, and lighting."><img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1100&q=85" alt="Mylapore Heritage Renovation" /><span>Mylapore Heritage Renovation<small>Renovation, Chennai</small></span></button>
+        </div>
+      </section>
+    </main>
+    <div class="lightbox" data-lightbox aria-hidden="true"><button class="lightbox-close" type="button" aria-label="Close preview" data-lightbox-close><i data-lucide="x"></i></button><img src="" alt="" data-lightbox-image /><div><h3 data-lightbox-title></h3><p data-lightbox-description></p></div></div>
+   <footer class="site-footer">
+	<div class="footer-grid">
+	<div class="footer-logo-block">
+  <a class="footer-brand-logo" href="index.html">
+    <img src="images/logo2.png" alt="Saffire Construction logo" class="footer-logo" />
+
+    <span class="footer-wordmark">
+      <strong>SAFFI<span>R</span>E</strong>
+      <small>CONSTRUCTION</small>
+    </span>
+  </a>
+
+  <p>Premium construction, renovation, and interiors in Chennai.</p>
+</div>
+	
+	<div><h4>Sitemap</h4><a href="index.html">Home</a><a href="about-us.html">About Us</a><a href="project-gallery.html">Project Gallery</a><a href="contact-us.html">Contact Us</a></div><div><h4>Services</h4><a href="commercial.html">Commercial</a><a href="residential.html">Residential</a><a href="renovation.html">Renovation</a><a href="interior-design.html">Interior Design</a></div>
+		<div class="footer-social">
+  <h4>Social Media</h4>
+
+  <a href="https://www.instagram.com/saffireconstructions?igsh=MXRkajZxbnF1MmFnaQ==" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+    <span>Instagram</span>
+  </a>
+
+  <a
+    href="https://wa.me/919962223058?text=Hello%20Saffire%20Construction%2C%20I%20am%20interested%20in%20your%20construction%20services.%20Please%20contact%20me."
+    target="_blank"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>WhatsApp</span>
+  </a>
+
+  <a href="https://www.facebook.com/share/1B8Cx7oVYm/" target="_blank">
+    <i class="fa-brands fa-facebook-f"></i>
+    <span>Facebook</span>
+  </a>
+</div>
+	
+	</footer>
+    <a class="mobile-call" href="tel:+919876543210"><i data-lucide="phone"></i> Call Saffire</a><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><script src="script.js"></script>
+  </body>
+</html>
