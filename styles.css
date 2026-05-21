@@ -1806,3 +1806,13 @@ body{
 .service-detail nth-child(n) {
 	margin-top:200px;
 }
+.section.reveal {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .section.reveal {
+    margin-top: 40px;
+  }
+}
