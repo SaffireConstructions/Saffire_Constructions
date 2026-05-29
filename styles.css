@@ -1225,7 +1225,6 @@ address {
   height: 120px;
   object-fit: contain;
   display: block;
-  mix-blend-mode: multiply;
   background: transparent;
   padding: 0;
  }
@@ -2234,4 +2233,137 @@ body{
 .process-grid article h3 {
   font-size: 24px;
   margin-bottom: 12px;
+}
+/* Thin premium header strip */
+.site-header,
+.site-header.is-top,
+.site-header.is-scrolled,
+.site-header.is-open {
+  min-height: 58px;
+  height: 58px;
+  padding: 0 42px 0 42px;
+  background: #050505;
+  border-bottom: 1px solid rgba(197, 160, 89, 0.45);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  overflow: visible;
+  z-index: 999;
+
+}
+
+/* Logo box outside the strip */
+.brand {
+  align-items: center;
+  background:#000000;
+  display: inline-flex;
+  gap: 8px;
+  min-height: 100px;
+  padding: 10px 14px;
+  position: relative;
+  top: 22px;
+  z-index: 5;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+    overflow: visible;
+
+}
+
+/* Logo size */
+.site-logo {
+	  display: block;
+  height: 78px;
+  width: 78px;
+  object-fit: contain;
+    flex: 0 0 auto;
+
+}
+
+/* Brand text beside logo */
+.logo-wordmark {
+  display: block;
+  white-space: nowrap;
+}
+.logo-wordmark strong {
+  color: #174a8b;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.logo-wordmark strong span {
+  color: #e30012;
+}
+
+.logo-wordmark small {
+  color: #174a8b;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+/* Menu aligned inside thin strip */
+.site-nav {
+  align-items: center;
+  height: 58px;
+}
+
+.site-nav > a,
+.dropdown-trigger {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 0;
+  text-shadow: none;
+}
+
+.site-nav > a.active,
+.dropdown-trigger.active {
+  color: #f1d58a;
+}
+
+.site-nav > a.active::after,
+.dropdown-trigger.active::after {
+  bottom: -10px;
+  background: #f1d58a;
+}
+.brand .site-logo {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+/* Force logo to show clearly */
+.site-header {
+  overflow: visible !important;
+    border-bottom: 2px solid #c5a059 !important;
+
+}
+
+.brand {
+  background: #000000 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 10px 16px !important;
+  min-height: 104px !important;
+  position: relative !important;
+  top: 26px !important;
+  z-index: 9999 !important;
+  overflow: visible !important;
+    border: 2px solid #c5a059 !important;
+
+}
+
+.brand .site-logo {
+  display: block !important;
+  width: 82px !important;
+  height: 82px !important;
+  object-fit: contain !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  background: #000000 !important;
+  mix-blend-mode: normal !important;
+  filter: none !important;
+  padding: 0 !important;
+  flex: 0 0 auto !important;
+}
+
+.logo-wordmark {
+  display: block !important;
+  white-space: nowrap !important;
 }
