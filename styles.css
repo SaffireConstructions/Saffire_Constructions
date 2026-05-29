@@ -2207,3 +2207,20 @@ body{
   padding-top: -20px;
   margin-top: -100px;
 }
+.home-feature-banner,
+.trust-section,
+.home-project-preview {
+  overflow: hidden;
+}
+
+.home-feature-banner h2,
+.trust-section h2,
+.home-project-preview h2 {
+  max-width: 100%;
+}
+
+.trust-grid,
+.preview-grid,
+.process-grid {
+  width: 100%;
+}
