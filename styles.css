@@ -406,7 +406,7 @@ h3 {
   max-width: 100% !important;
   white-space: normal !important;
   padding-left: 20px;
-  margin-top: -130px;
+  margin-top: -50px;
   
 }
 
@@ -2089,4 +2089,121 @@ body{
     top: auto;
     transform: none;
   }
+}
+.process-grid,
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.process-grid article,
+.trust-grid article {
+  background: #ffffff;
+  border: 1px solid rgba(45, 45, 45, 0.12);
+  min-height: 260px;
+  padding: 34px 28px;
+}
+
+.process-grid span {
+  color: #c5a059;
+  display: block;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.process-grid h3,
+.trust-grid h3 {
+  margin-bottom: 16px;
+}
+
+.home-feature-banner {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.38)),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 120px clamp(20px, 7vw, 110px);
+}
+
+.home-feature-banner div {
+  max-width: 980px;
+}
+
+.home-feature-banner h2 {
+  color: #ffffff;
+  font-size: clamp(32px, 3vw, 50px);
+  margin-bottom: 34px;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.preview-grid a {
+  background: #2d2d2d;
+  color: #ffffff;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.preview-grid img {
+  aspect-ratio: 4 / 3;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  width: 100%;
+}
+
+.preview-grid span {
+  background: rgba(197, 160, 89, 0.92);
+  bottom: 0;
+  color: #2d2d2d;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 26px;
+  left: 0;
+  padding: 18px 22px;
+  position: absolute;
+  width: 100%;
+}
+
+.preview-grid a:hover img {
+  opacity: 0.76;
+  transform: scale(1.05);
+}
+
+@media (max-width: 1080px) {
+  .process-grid,
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .process-grid,
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-feature-banner {
+    padding: 80px 20px;
+  }
+}
+.process-section {
+  padding-top: 0px;
+  margin-top: -10px;
+}
+.home-project-preview {
+  padding-top: -20px;
+  margin-top: -100px;
 }
