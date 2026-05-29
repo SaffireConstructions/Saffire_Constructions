@@ -31,6 +31,10 @@ body.menu-open {
   overflow: hidden;
 }
 
+body.enquiry-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -891,6 +895,109 @@ address {
   width: 46px;
 }
 
+.enquiry-tab {
+  background: #16246f;
+  border: 1px solid #3f8cff;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.28);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  min-height: 56px;
+  padding: 18px 14px;
+  position: fixed;
+  right: 0;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background 180ms ease, box-shadow 180ms ease;
+  writing-mode: vertical-rl;
+  z-index: 85;
+}
+
+.enquiry-tab:hover,
+.enquiry-tab:focus-visible {
+  background: #1d318f;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
+  outline: 0;
+}
+
+.enquiry-modal {
+  align-items: center;
+  background: rgba(18, 18, 18, 0.76);
+  display: none;
+  inset: 0;
+  justify-content: center;
+  padding: 92px clamp(18px, 5vw, 52px) 32px;
+  position: fixed;
+  z-index: 120;
+}
+
+.enquiry-modal.is-open {
+  display: flex;
+}
+
+.enquiry-dialog {
+  background: var(--white);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
+  max-height: calc(100vh - 124px);
+  max-width: 620px;
+  overflow: auto;
+  position: relative;
+  width: min(100%, 620px);
+}
+
+.enquiry-heading {
+  background:
+    radial-gradient(circle at 14% 12%, rgba(197, 160, 89, 0.24), transparent 30%),
+    linear-gradient(115deg, #050505 0%, #202020 58%, #080808 100%);
+  border-bottom: 2px solid var(--gold);
+  color: var(--white);
+  padding: 30px clamp(24px, 5vw, 42px);
+}
+
+.enquiry-heading span {
+  color: #f1d58a;
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.enquiry-heading h2 {
+  color: var(--white);
+  font-size: clamp(30px, 6vw, 46px);
+}
+
+.enquiry-close {
+  align-items: center;
+  background: var(--gold);
+  border: 0;
+  color: var(--charcoal);
+  cursor: pointer;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 44px;
+  z-index: 2;
+}
+
+.enquiry-close span {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.enquiry-form.lead-form {
+  border: 0;
+  box-shadow: none;
+}
+
 .mobile-call {
   align-items: center;
   background: linear-gradient(135deg, var(--gold), #e4c982, var(--gold-dark));
@@ -1086,6 +1193,24 @@ address {
 
   .mobile-call {
     display: flex;
+  }
+
+  .enquiry-tab {
+    bottom: 82px;
+    font-size: 12px;
+    min-height: 46px;
+    padding: 14px 10px;
+    top: auto;
+    transform: none;
+  }
+
+  .enquiry-modal {
+    align-items: flex-start;
+    padding: 76px 14px 104px;
+  }
+
+  .enquiry-dialog {
+    max-height: calc(100vh - 180px);
   }
 }
 ..brand {
@@ -1883,4 +2008,85 @@ body{
 
 .card p {
   font-size: 0.92rem;
+}
+.floating-enquiry-btn {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 999;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: right bottom;
+  background: #111b5c;
+  border: 1px solid #c5a059;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 16px 24px;
+  text-transform: uppercase;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.enquiry-popup {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.72);
+  display: none;
+  inset: 0;
+  justify-content: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.enquiry-popup.is-open {
+  display: flex;
+}
+
+.enquiry-box {
+  background: #f9f9f9;
+  max-width: 560px;
+  padding: 34px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+.enquiry-box h2 {
+  margin-bottom: 10px;
+}
+
+.enquiry-box form {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.enquiry-box label {
+  color: #2d2d2d;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.enquiry-close {
+  background: #2d2d2d;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 28px;
+  height: 42px;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 42px;
+}
+
+@media (max-width: 760px) {
+  .floating-enquiry-btn {
+    bottom: 80px;
+    right: 12px;
+    top: auto;
+    transform: none;
+  }
 }

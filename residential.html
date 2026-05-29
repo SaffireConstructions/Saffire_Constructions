@@ -101,5 +101,60 @@
 </div>
    </footer>
     <a class="mobile-call" href="tel:+919876543210"><i data-lucide="phone"></i> Call Saffire</a><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><script src="script.js"></script>
+  <button class="floating-enquiry-btn" type="button" id="openEnquiry">
+  Make an Enquiry
+</button>
+
+<div class="enquiry-popup" id="enquiryPopup">
+  <div class="enquiry-box">
+    <button class="enquiry-close" type="button" id="closeEnquiry">&times;</button>
+
+    <h2>Make an Enquiry</h2>
+    <p>Share your details and our team will contact you shortly.</p>
+
+    <form action="https://formsubmit.co/YOURMAIL@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Saffire Construction Enquiry" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+
+      <label>
+        Name
+        <input type="text" name="name" placeholder="Your name" required />
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" placeholder="you@example.com" required />
+      </label>
+
+      <label>
+        Phone
+        <input type="tel" name="phone" placeholder="+91 99622 23058" required />
+      </label>
+
+      <label>
+        Project Type
+        <select name="project_type" required>
+          <option value="">Select a service</option>
+          <option>Commercial</option>
+          <option>Residential</option>
+          <option>Renovation</option>
+          <option>Interior Design</option>
+          <option>Flat Promoters</option>
+        </select>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="4" placeholder="Tell us about your project"></textarea>
+      </label>
+
+      <button class="button button-gold" type="submit">Submit Enquiry</button>
+    </form>
+  </div>
+</div>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="script.js"></script>
   </body>
 </html>

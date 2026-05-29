@@ -160,6 +160,29 @@ window.addEventListener("scroll", () => {
 setHeaderState();
 updateParallax();
 
-if (window.lucide) {
-  window.lucide.createIcons();
-}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const openEnquiry = document.getElementById("openEnquiry");
+  const closeEnquiry = document.getElementById("closeEnquiry");
+  const enquiryPopup = document.getElementById("enquiryPopup");
+
+  if (openEnquiry && enquiryPopup) {
+    openEnquiry.addEventListener("click", () => {
+      enquiryPopup.classList.add("is-open");
+    });
+  }
+
+  if (closeEnquiry && enquiryPopup) {
+    closeEnquiry.addEventListener("click", () => {
+      enquiryPopup.classList.remove("is-open");
+    });
+  }
+
+  if (enquiryPopup) {
+    enquiryPopup.addEventListener("click", (event) => {
+      if (event.target === enquiryPopup) {
+        enquiryPopup.classList.remove("is-open");
+      }
+    });
+  }
+});
