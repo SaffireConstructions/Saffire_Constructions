@@ -2224,3 +2224,14 @@ body{
 .process-grid {
   width: 100%;
 }
+.process-grid article p {
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+  color: #707070;
+  margin-top: 14px;
+}
+
+.process-grid article h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
