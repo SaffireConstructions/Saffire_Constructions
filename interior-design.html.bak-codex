@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
   <!-- Google tag (gtag.js) -->
@@ -20,37 +20,20 @@
 	<link rel="icon" type="image/png" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-    <script>document.documentElement.classList.add("js");</script><link rel="stylesheet" href="styles.css?v=20260605" />
+    <script>document.documentElement.classList.add("js");</script><link rel="stylesheet" href="styles.css" />
   </head>
    <body class="Interior-page">
     <header class="site-header" data-header>
-  <a class="brand" href="index.html" aria-label="Saffire Construction home">
+	  <a class="brand" href="index.html" aria-label="Saffire Construction home">
     <span class="logo-box">
-      <img src="images/logo.png" alt="Saffire Construction logo" class="site-logo" />
-    </span>
-    <span class="brand-text logo-wordmark">
-      <strong>SAFFI<span>R</span>E</strong>
-      <small>CONSTRUCTION</small>
-    </span>
-  </a>
-  <button class="menu-toggle" type="button" aria-label="Open menu" data-menu-toggle><i data-lucide="menu"></i></button>
-  <nav class="site-nav" data-nav>
-    <a href="index.html">Home</a>
-    <a href="about-us.html">About Us</a>
-    <div class="dropdown" data-dropdown>
-      <button class="dropdown-trigger active" type="button" data-dropdown-trigger>Services <i data-lucide="chevron-down"></i></button>
-      <div class="dropdown-menu">
-        <a href="commercial.html">Commercial</a>
-        <a href="residential.html">Residential</a>
-        <a href="renovation.html">Renovation</a>
-        <a href="interior-design.html">Interior Design</a>
-        <a href="flat-promoters.html">Flat Promoters</a>
-      </div>
-    </div>
-    <a href="project-gallery.html">Project Gallery</a>
-    <a href="contact-us.html">Contact Us</a>
-  </nav>
-</header>
+  <img src="images/logo.png" alt="Saffire Construction logo" class="site-logo" />
+</span>
+  <span class="brand-text logo-wordmark">
+    <strong>SAFFI<span>R</span>E</strong>
+    <small>CONSTRUCTION</small>
+  </span>
+</a>
+	<button class="menu-toggle" type="button" aria-label="Open menu" data-menu-toggle><i data-lucide="menu"></i></button><nav class="site-nav" data-nav><a href="index.html">Home</a><a href="about-us.html">About Us</a><div class="dropdown" data-dropdown><button class="dropdown-trigger active" type="button" data-dropdown-trigger>Services <i data-lucide="chevron-down"></i></button><div class="dropdown-menu"><a href="commercial.html">Commercial</a><a href="residential.html">Residential</a><a href="renovation.html">Renovation</a><a href="interior-design.html">Interior Design</a> <a href="flat-promoters.html">Flat Promoters</a></div></div><a href="project-gallery.html">Project Gallery</a><a href="contact-us.html">Contact Us</a></nav></header>
     <main>
       <section class="split-hero">
         <div class="reveal"><h1>Aesthetic functionality in every surface and sightline.</h1><p>Our interiors combine marble, warm wood, brushed metal, soft lighting, furniture planning, and practical storage to create refined daily environments.</p><a class="button button-gold" href="contact-us.html">Start Your Project</a></div>
@@ -65,15 +48,14 @@
     <footer class="site-footer">
 	<div class="footer-grid">
 	<div class="footer-logo-block">
-   <a class="brand" href="index.html" aria-label="Saffire Construction home">
-    <span class="logo-box">
-  <img src="images/logo.png" alt="Saffire Construction logo" class="site-logo" />
-</span>
-  <span class="brand-text logo-wordmark">
-    <strong>SAFFI<span>R</span>E</strong>
-    <small>CONSTRUCTION</small>
-  </span>
-</a>
+  <a class="footer-brand-logo" href="index.html">
+    <img src="images/logo2.png" alt="Saffire Construction logo" class="footer-logo" />
+
+    <span class="footer-wordmark">
+      <strong>SAFFI<span>R</span>E</strong>
+      <small>CONSTRUCTION</small>
+    </span>
+  </a>
 
   <p>Premium construction, renovation, and interiors in Chennai.</p>
 </div>
@@ -100,7 +82,8 @@
   </a>
 </div>
 	</footer>
-    <a class="mobile-call" href="tel:+919876543210"><i data-lucide="phone"></i> Call Saffire</a><button class="floating-enquiry-btn" type="button" id="openEnquiry">
+    <a class="mobile-call" href="tel:+919876543210"><i data-lucide="phone"></i> Call Saffire</a><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><script src="script.js"></script>
+  <button class="floating-enquiry-btn" type="button" id="openEnquiry">
   Make an Enquiry
 </button>
 
@@ -154,10 +137,6 @@
 </div>
 
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<script src="script.js?v=20260605"></script>
-</body>
+<script src="script.js"></script>
+  </body>
 </html>
-
-
-
-
